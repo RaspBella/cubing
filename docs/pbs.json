@@ -1,1 +1,67 @@
-{"2x2": {"single": "0.63", "average": "1.91"}, "3x3": {"single": "4.96", "average": "7.72"}, "4x4": {"single": "30.27", "average": "36.05"}, "5x5": {"single": "53.43", "average": "1:02.17"}, "6x6": {"single": "1:46.07", "average": "1:57.88"}, "7x7": {"single": "3:03.70", "average": "3:13.59"}, "3bld": {"single": "54.94", "average": "1:17.62"}, "4bld": {"single": "8:37.92", "average": "12:06.71"}, "5bld": {"single": "DNF", "average": "DNF"}, "mbld": "3/3 in 12:48", "oh": {"single": "10.94", "average": "16.94"}, "sq1": {"single": "?.??", "average": "13.67"}, "pyra": {"single": "1.76", "average": "4.01"}, "skewb": {"single": "2.42", "average": "4.78"}, "mega": {"single": "59.31", "average": "1:09.08"}, "clock": {"single": "6.98", "average": "8.97"}, "fmc": {"single": "23", "average": "28.00"}}
+{
+  "2x2": {
+    "single": "0.63",
+    "average": "1.91"
+  },
+  "3x3": {
+    "single": "4.96",
+    "average": "7.72"
+  },
+  "4x4": {
+    "single": "30.27",
+    "average": "36.05"
+  },
+  "5x5": {
+    "single": "53.43",
+    "average": "1:02.17"
+  },
+  "6x6": {
+    "single": "1:46.07",
+    "average": "1:57.88"
+  },
+  "7x7": {
+    "single": "3:03.70",
+    "average": "3:13.59"
+  },
+  "3bld": {
+    "single": "54.94",
+    "average": "1:17.62"
+  },
+  "4bld": {
+    "single": "8:37.92",
+    "average": "12:06.71"
+  },
+  "5bld": {
+    "single": "DNF",
+    "average": "DNF"
+  },
+  "mbld": "3/3 in 12:48",
+  "oh": {
+    "single": "10.94",
+    "average": "16.94"
+  },
+  "sq1": {
+    "single": "?.??",
+    "average": "13.67"
+  },
+  "pyra": {
+    "single": "1.76",
+    "average": "4.01"
+  },
+  "skewb": {
+    "single": "2.42",
+    "average": "4.78"
+  },
+  "mega": {
+    "single": "59.31",
+    "average": "1:09.08"
+  },
+  "clock": {
+    "single": "6.98",
+    "average": "8.97"
+  },
+  "fmc": {
+    "single": "23",
+    "average": "28.00"
+  }
+}
