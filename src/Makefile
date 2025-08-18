@@ -1,4 +1,4 @@
-../docs/pbs/index.html: ../docs/pbs ../docs/pbs.json gen.py template.html
+../docs/pbs/index.html: ../docs/pbs ../docs/pbs.json gen.py
 	python gen.py
 
 ../docs/pbs:
