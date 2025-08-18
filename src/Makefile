@@ -1,5 +1,5 @@
-../docs/pbs/index.html: ../docs/pbs ../docs/pbs.json gen.py
-	python gen.py
+../docs/pbs/index.html: ../docs/pbs ../docs/pbs.json pbs.py
+	python pbs.py
 
 ../docs/pbs:
 	mkdir -p ../docs/pbs
