@@ -18,17 +18,20 @@ def table_row(name, comp, count):
 
 def table_rows(comps):
   year = list(comps)[0][-4:]
+  count = 0
   rows = []
 
   for x, name in zip(range(len(comps)), comps):
     if name[-4:] != year:
       rows.append(f"""
         <tr>
-          <td colspan="3" id="{year}">Post {year} total: {x}</td>
+          <td colspan="3" id="{year}">{count} {"comps" if count > 1 else "comp"} in {year}</td>
         </tr>""")
       year = name[-4:]
+      count = 0
 
     rows.append(table_row(name, comps[name], x + 1))
+    count += 1
 
   rows.append(f"""
         <tr>
