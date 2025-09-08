@@ -1,4 +1,4 @@
-all: ../docs/pbs/index.html ../docs/comps/index.html
+all: ../docs/pbs/index.html ../docs/comps/index.html ../docs/recons
 
 ../docs/pbs/index.html: ../docs/pbs ../docs/pbs.json pbs.py
 	python pbs.py
@@ -12,5 +12,9 @@ all: ../docs/pbs/index.html ../docs/comps/index.html
 ../docs/comps:
 	mkdir -p $@
 
+../docs/recons:
+	make -C recons
+
 clean:
+	make -C recons clean
 	rm -rf ../docs/pbs ../docs/comps
