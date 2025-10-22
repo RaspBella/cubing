@@ -1,4 +1,4 @@
-name: Build with Make and Python and Deploy to GitHub Pages
+name: Build with Make and Deploy to GitHub Pages
 
 on:
   push:
@@ -18,8 +18,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install Make and Python and Pandoc
-        run: sudo apt-get update && sudo apt-get install -y make python3 pandoc
+      - name: Install Make
+        run: sudo apt-get update && sudo apt-get install -y make
 
       - name: Run Make
         run: make -C src
