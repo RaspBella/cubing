@@ -1,2 +1,4 @@
-docs/comps
-docs/pbs
+docs/pbs*
+docs/comps*
+src/gen*
+!src/gen.c

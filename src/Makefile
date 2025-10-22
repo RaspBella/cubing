@@ -4,11 +4,16 @@ dirs=$(addprefix $(output_dir)/,$(files))
 
 .PHONY: all clean
 
-all: $(addsuffix /index.html,$(dirs))
+CFLAGS=-MMD
 
-$(output_dir)/%/index.html: %.py
-	mkdir -p $(dir $@)
-	python $<
+all: gen
+	mkdir -p $(dirs)
+	./gen
+
+gen: gen.c
+	cc $(CFLAGS) $< -o $@
+
+-include gen.d
 
 clean:
-	rm -rf $(dirs)
+	rm -rf gen gen.d $(dirs) $(dirs).json
