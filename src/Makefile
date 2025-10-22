@@ -1,20 +1,14 @@
-all: ../docs/pbs/index.html ../docs/comps/index.html ../docs/recons
+output_dir=../docs
+files=pbs comps
+dirs=$(addprefix $(output_dir)/,$(files))
 
-../docs/pbs/index.html: ../docs/pbs ../docs/pbs.json pbs.py
-	python pbs.py
+.PHONY: all clean
 
-../docs/comps/index.html: ../docs/comps ../docs/comps.json comps.py
-	python comps.py
+all: $(addsuffix /index.html,$(dirs))
 
-../docs/pbs:
-	mkdir -p $@
-
-../docs/comps:
-	mkdir -p $@
-
-../docs/recons:
-	make -C recons
+$(output_dir)/%/index.html: %.py
+	mkdir -p $(dir $@)
+	python $<
 
 clean:
-	make -C recons clean
-	rm -rf ../docs/pbs ../docs/comps
+	rm -rf $(dirs)
