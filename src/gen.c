@@ -315,8 +315,12 @@ void comps2html(FILE *fp) {
 
   fprintf(
     fp,
+    "        <tr>\n"
+    "          <td colspan=\"3\">%c%c%c%c: %zu/%zu</td>\n"
+    "        </tr>\n"
     "      </table>\n"
-    "    </div>\n"
+    "    </div>\n",
+    y[0], y[1], y[2], y[3], year_count, count
   );
 
   end_html(fp);
