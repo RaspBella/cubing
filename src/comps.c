@@ -402,3 +402,7 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/ManchesterClockDay2025",
   "The unnoficial event clock doubles was surprisingly fun :3"
 );
+COMP(
+  "Hampshire Autumn 2025",
+  "https://www.worldcubeassociation.org/competitions/HampshireAutumn2025"
+);
