@@ -18,7 +18,7 @@ PB(e_5BLD, single, "DNF");
 PB(e_5BLD, average, "DNF");
 PB(e_MBLD, single, "3/3 in 12:48");
 PB(e_OH, single, "10.94");
-PB(e_OH, average, "16.94");
+PB(e_OH, average, "16.65");
 PB(e_SQ1, single, "?.??");
 PB(e_SQ1, average, "13.67");
 PB(e_Pyra, single, "1.76");
