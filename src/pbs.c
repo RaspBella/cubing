@@ -22,7 +22,7 @@ PB(e_OH, average, "16.65");
 PB(e_SQ1, single, "?.??");
 PB(e_SQ1, average, "13.67");
 PB(e_Pyra, single, "1.76");
-PB(e_Pyra, average, "3.99");
+PB(e_Pyra, average, "3.90");
 PB(e_Skewb, single, "2.42");
 PB(e_Skewb, average, "4.77");
 PB(e_Mega, single, "59.31");
