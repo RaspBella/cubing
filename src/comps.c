@@ -411,3 +411,8 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/Stevenage10thAnniversary2025",
   "I officially unofficially competed in 3x3 with feet!"
 );
+COMP(
+  "Belfast Autumn 2025",
+  "https://www.worldcubeassociation.org/competitions/BelfastAutumn2025",
+  "My first Irish comp!"
+);
