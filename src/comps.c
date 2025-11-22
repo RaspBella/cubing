@@ -416,3 +416,7 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/BelfastAutumn2025",
   "My first Irish comp!"
 );
+COMP(
+  "Glasgow Autumn Open 2025",
+  "https://www.worldcubeassociation.org/competitions/GlasgowAutumnOpen2025"
+);
