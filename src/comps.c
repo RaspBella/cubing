@@ -420,3 +420,8 @@ COMP(
   "Glasgow Autumn Open 2025",
   "https://www.worldcubeassociation.org/competitions/GlasgowAutumnOpen2025"
 );
+COMP(
+  "Leicestershire Autumn 2025",
+  "https://www.worldcubeassociation.org/competitions/LeicestershireAutumn2025",
+  "My first Leicestershire comp!"
+);
