@@ -429,3 +429,7 @@ COMP(
   "Manchester 5x5 Day 2025",
   "https://www.worldcubeassociation.org/competitions/Manchester5x5Day2025"
 );
+COMP(
+  "Wiltshire Winter 2025",
+  "https://www.worldcubeassociation.org/competitions/WiltshireWinter2025"
+);
