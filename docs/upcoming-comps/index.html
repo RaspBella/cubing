@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Upcoming comps - RaspBella</title>
+    <link rel="stylesheet" href="/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+  </head>
   <body>
-    <label for="input-wca-id">Input WCA ID:</label>
-    <input id="input-wca-id"/>
-    <button id="submit-wca-id">Submit</button>
+    <div>
+      <label for="input-wca-id">Input WCA ID:</label>
+      <input id="input-wca-id"/>
+      <button id="submit-wca-id">Submit</button>
 
-    <h3 id="user-not-found" style="display: none;">User not found</h3>
+      <h3 id="user-not-found" style="color: red; display: none;">User not found</h3>
 
-    <div id="person" style="display: none;">
-      <h3 id="name">Name:</h3>
-      <h3 id="region">Region:</h3>
-      <h3 id="wca-id">WCA ID:</h3>
+      <div id="person" style="display: none;">
+        <h3 id="name">Name:</h3>
+        <h3 id="region">Region:</h3>
+        <h3 id="wca-id">WCA ID:</h3>
+      </div>
     </div>
   </body>
   <script>
@@ -79,8 +92,6 @@
         else {
           const person = document.getElementById("person");
 
-          person.style.display = "block";
-
           document.getElementById("name").innerText = `Name: ${data.user.name}`;
           document.getElementById("region").innerText = `Region: ${data.user.country.name}`;
           document.getElementById("wca-id").innerText = `WCA ID: ${wca_id}`;
@@ -94,16 +105,30 @@
           let count = comps.length;
     
           if (count > 0) {
+            const comps_table = document.createElement("table");
+
+            comps_table.innerHTML = "<thead><tr><th>#</th><th>Date range</th><th>Name</th></tr></thead>";
+
+            const table_body = document.createElement("tbody");
+
             for (let i = 0; i < count; ++i) {
-              console.log(comps[i]);
+              const row = table_body.insertRow();
+
+              row.innerHTML = `<td>${i+1}</td><td>${comps[i].date_range}</td><td><a href="${comps[i].url}">${comps[i].name}</a></td>`;
             }
+
+            comps_table.appendChild(table_body);
+
+            person.appendChild(comps_table);
           }
     
           else {
-            console.log("No upcoming comps");
+            const no_comps = document.createTextNode("No upcoming comps");
+
+            person.appendChild(no_comps);
           }
   
-          console.log(data);
+          person.style.display = "block";
         }
       })
       .catch(error => console.error("Error retrieving data"));
