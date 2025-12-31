@@ -61,7 +61,7 @@
     button.onclick = () => {
       let input_wca_id = document.getElementById("input-wca-id").value;
 
-      input_wca_id.toUpperCase();
+      input_wca_id = input_wca_id.toUpperCase();
 
       if (valid_wca_id(input_wca_id)) location.search = `?${input_wca_id}`;
     };
@@ -70,7 +70,7 @@
 
     let wca_id = location.search.slice(1);
 
-    wca_id.toUpperCase();
+    wca_id = wca_id.toUpperCase();
 
     if (!valid_wca_id(wca_id)) {
       wca_id = default_wca_id;
