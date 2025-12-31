@@ -64,33 +64,27 @@
 
     const default_wca_id = "2018CAMP17";
 
-    const button = document.getElementById("submit-wca-id");
+    document.getElementById("submit-wca-id").onclick = () => {
+      const input_wca_id = document.getElementById("input-wca-id").value;
 
-    button.onclick = () => {
-      let input_wca_id = document.getElementById("input-wca-id").value;
-
-      if (valid_wca_id(input_wca_id)) location.search = `?${input_wca_id}`;
+      if (valid_wca_id(input_wca_id)) {
+        location.search = `?${input_wca_id}`;
+      }
     };
 
-    let url_start = "https://www.worldcubeassociation.org/api/v0/users/";
-
-    let wca_id = location.search.slice(1);
+    const wca_id = location.search.slice(1);
 
     if (!valid_wca_id(wca_id)) {
-      wca_id = default_wca_id;
-
-      history.pushState({}, "", `?${wca_id}`);
+      location.search = `?${default_wca_id}`;
     }
 
-    let url_end = "?upcoming_competitions=true";
+    const url = `https://www.worldcubeassociation.org/api/v0/users/${wca_id}?upcoming_competitions=true`;
   
-    fetch(`${url_start}${wca_id}${url_end}`)
+    fetch(url)
       .then(txt => txt.json())
       .then(data => {
         if (!data.user) {
-          const user_not_found = document.getElementById("user-not-found");
-
-          user_not_found.style.display = "block";
+          document.getElementById("user-not-found").style.display = "block";
         }
 
         else {
@@ -100,36 +94,30 @@
           document.getElementById("region").innerText = `Region: ${data.user.country.name}`;
           document.getElementById("wca-id").innerText = `WCA ID: ${data.user.wca_id}`;
   
-          let comps = data.upcoming_competitions.sort(
+          const comps = data.upcoming_competitions.sort(
             (a, b) => {
               return a.start_date > b.start_date ? 1 : b.start_date > a.start_date ? -1 : 0;
             }
           );
     
-          let count = comps.length;
-    
-          if (count > 0) {
+          if (comps.length > 0) {
             const comps_table = document.createElement("table");
 
             comps_table.innerHTML = "<thead><tr><th>#</th><th>Date range</th><th>Name</th></tr></thead>";
 
             const table_body = document.createElement("tbody");
 
-            for (let i = 0; i < count; ++i) {
+            for (let i = 0; i < comps.length; ++i) {
               const row = table_body.insertRow();
 
               row.innerHTML = `<td>${i+1}</td><td>${comps[i].date_range}</td><td><a href="${comps[i].url}">${comps[i].name}</a></td>`;
             }
 
-            comps_table.appendChild(table_body);
-
-            person.appendChild(comps_table);
+            person.appendChild(comps_table.appendChild(table_body));
           }
     
           else {
-            const no_comps = document.createTextNode("No upcoming comps");
-
-            person.appendChild(no_comps);
+            person.appendChild(document.createTextNode("No upcoming comps"));
           }
   
           person.style.display = "block";
