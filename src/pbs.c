@@ -26,7 +26,7 @@ PB(e_Pyra, average, "3.90");
 PB(e_Skewb, single, "2.42");
 PB(e_Skewb, average, "4.77");
 PB(e_Mega, single, "59.31");
-PB(e_Mega, average, "1:09.08");
+PB(e_Mega, average, "1:08.63");
 PB(e_Clock, single, "6.98");
 PB(e_Clock, average, "8.97");
 PB(e_FMC, single, "23");
