@@ -433,3 +433,8 @@ COMP(
   "Wiltshire Winter 2025",
   "https://www.worldcubeassociation.org/competitions/WiltshireWinter2025"
 );
+COMP(
+  "Weston-super-Mare Winter 2026",
+  "https://www.worldcubeassociation.org/competitions/WestonsuperMareWinter2026",
+  "My 'best' zero point multi; 3/6"
+);
