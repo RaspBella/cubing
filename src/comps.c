@@ -438,3 +438,8 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/WestonsuperMareWinter2026",
   "My 'best' zero point multi; 3/6"
 );
+COMP(
+  "Manchester Favourites II 2026",
+  "https://www.worldcubeassociation.org/competitions/ManchesterFavouritesII2026",
+  "I got my first Pyraminx podium"
+);
