@@ -443,3 +443,8 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/ManchesterFavouritesII2026",
   "I got my first Pyraminx podium"
 );
+COMP(
+  "Edinburgh Winter 2026",
+  "https://www.worldcubeassociation.org/competitions/EdinburghWinter2026",
+  "Hundreth comp!!!!! holy UKCA got me a cake :3!!!!!"
+);
