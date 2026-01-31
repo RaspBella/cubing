@@ -448,3 +448,7 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/EdinburghWinter2026",
   "Hundreth comp!!!!! holy UKCA got me a cake :3!!!!!"
 );
+COMP(
+  "Manchester Square-1 Day 2026",
+  "https://www.worldcubeassociation.org/competitions/ManchesterSquare1Day2026"
+);
