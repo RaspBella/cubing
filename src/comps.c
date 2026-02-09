@@ -452,3 +452,8 @@ COMP(
   "Manchester Square-1 Day 2026",
   "https://www.worldcubeassociation.org/competitions/ManchesterSquare1Day2026"
 );
+COMP(
+  "Glasgow Winter SBO 2026",
+  "https://www.worldcubeassociation.org/competitions/GlasgowWinterSBO2026",
+  "First official 5BLD Success :333!!!"
+);
