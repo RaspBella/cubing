@@ -457,3 +457,8 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/GlasgowWinterSBO2026",
   "First official 5BLD Success :333!!!"
 );
+COMP(
+  "Glasgow Side Events Winter 2026",
+  "https://www.worldcubeassociation.org/competitions/GlasgowSideEventsWinter2026",
+  "Made 6x6 Euros quali and got PB's for 7x7 mean and Megaminx single and average :333!!!"
+);
