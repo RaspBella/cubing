@@ -462,3 +462,12 @@ COMP(
   "https://www.worldcubeassociation.org/competitions/GlasgowSideEventsWinter2026",
   "Made 6x6 Euros quali and got PB's for 7x7 mean and Megaminx single and average :333!!!"
 );
+COMP(
+  "Falkirk Open 2026",
+  "https://www.worldcubeassociation.org/competitions/FalkirkOpen2026",
+  "My first comp in Falkirk :3"
+);
+COMP(
+  "Crewe Winter 2026",
+  "https://www.worldcubeassociation.org/competitions/CreweWinter2026"
+);
