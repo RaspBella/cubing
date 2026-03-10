@@ -475,3 +475,7 @@ COMP(
   "Glasgow Fav Evening V 2026",
   "https://www.worldcubeassociation.org/competitions/GlasgowFavEveningV2026"
 );
+COMP(
+  "Glasgow Blind Evening Spring 2026",
+  "https://www.worldcubeassociation.org/competitions/GlasgowBlindEveningSpring2026"
+);
