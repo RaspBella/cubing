@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#define WCA "worldcubeassociation.org"
+#define COMP_BASE_URL "https://" WCA "/competitions/"
+
 #define OUTPUT_DIR "../docs"
 
 enum {
@@ -51,8 +54,7 @@ struct {
 } pbs[EVENT_COUNT];
 
 typedef struct {
-  const char *name;
-  const char *url;
+  const char *id;
   const char *text;
 } comp;
 
@@ -75,11 +77,11 @@ struct {
 
 #define PB(event, format, pb) pbs[event].format = pb;
 
-#define COMP2(NAME, URL) da_append(&comps, ((comp){ .name = NAME, .url = URL, .text = NULL }));
-#define COMP3(NAME, URL, TEXT) da_append(&comps, ((comp){ .name = NAME, .url = URL, .text = TEXT }));
+#define COMP1(ID) da_append(&comps, ((comp){ .id = ID, .text = NULL }));
+#define COMP2(ID, TEXT) da_append(&comps, ((comp){ .id = ID, .text = TEXT }));
 
-#define GET_COMP(_1, _2, _3, NAME, ...) NAME
-#define COMP(...) GET_COMP(__VA_ARGS__, COMP3, COMP2)(__VA_ARGS__)
+#define GET_COMP(_1, _2, ID, ...) ID
+#define COMP(...) GET_COMP(__VA_ARGS__, COMP2, COMP1)(__VA_ARGS__)
 
 void start_html(FILE *fp) {
   fprintf(
@@ -237,11 +239,11 @@ void comp2html(FILE *fp, size_t n, comp comp) {
       fp,
       "        <tr>\n"
       "          <td>%zu</td>\n"
-      "          <td><a href=\"%s\">%s</a></td>\n"
+      "          <td><a href=\"" COMP_BASE_URL "%s\">%s</a></td>\n"
       "          <td>%s</td>\n"
       "        </tr>\n",
       n,
-      comp.url, comp.name,
+      comp.id, comp.id,
       comp.text
     );
   }
@@ -251,10 +253,10 @@ void comp2html(FILE *fp, size_t n, comp comp) {
       fp,
       "        <tr>\n"
       "          <td>%zu</td>\n"
-      "          <td colspan=\"2\"><a href=\"%s\">%s</a></td>\n"
+      "          <td colspan=\"2\"><a href=\"" COMP_BASE_URL "%s\">%s</a></td>\n"
       "        </tr>\n",
       n,
-      comp.url, comp.name
+      comp.id, comp.id
     );
   }
 }
@@ -278,18 +280,18 @@ void comps2html(FILE *fp) {
   size_t year_count = 0;
 
   char y[4] = {
-    [0] = comps.items->name[strlen(comps.items->name) - 4],
-    [1] = comps.items->name[strlen(comps.items->name) - 3],
-    [2] = comps.items->name[strlen(comps.items->name) - 2],
-    [3] = comps.items->name[strlen(comps.items->name) - 1]
+    [0] = comps.items->id[strlen(comps.items->id) - 4],
+    [1] = comps.items->id[strlen(comps.items->id) - 3],
+    [2] = comps.items->id[strlen(comps.items->id) - 2],
+    [3] = comps.items->id[strlen(comps.items->id) - 1]
   };
 
   for (size_t i = 0; i < comps.count; i++) {
     char ny[4] = {
-      [0] = comps.items[i].name[strlen(comps.items[i].name) - 4],
-      [1] = comps.items[i].name[strlen(comps.items[i].name) - 3],
-      [2] = comps.items[i].name[strlen(comps.items[i].name) - 2],
-      [3] = comps.items[i].name[strlen(comps.items[i].name) - 1]
+      [0] = comps.items[i].id[strlen(comps.items[i].id) - 4],
+      [1] = comps.items[i].id[strlen(comps.items[i].id) - 3],
+      [2] = comps.items[i].id[strlen(comps.items[i].id) - 2],
+      [3] = comps.items[i].id[strlen(comps.items[i].id) - 1]
     };
 
     if (ny[3] != y[3] || ny[2] != y[2] || ny[1] != y[1] || ny[0] != y[0]) {
@@ -332,12 +334,8 @@ void comp2json(FILE *fp, comp comp) {
   if (comp.text) {
     fprintf(
       fp,
-      "  \"%s\": {\n"
-      "    \"url\": \"%s\",\n"
-      "    \"info\": \"%s\"\n"
-      "  }",
-      comp.name,
-      comp.url,
+      "  \"%s\": \"%s\"",
+      comp.id,
       comp.text
     );
   }
@@ -345,11 +343,8 @@ void comp2json(FILE *fp, comp comp) {
   else {
     fprintf(
       fp,
-      "  \"%s\": {\n"
-      "    \"url\": \"%s\"\n"
-      "  }",
-      comp.name,
-      comp.url
+      "  \"%s\": null",
+      comp.id
     );
   }
 }
