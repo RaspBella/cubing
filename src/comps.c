@@ -372,3 +372,7 @@ COMP(
 COMP(
   "GlasgowBlindEveningSpring2026"
 );
+COMP(
+  "GlasgowFavEveningVI2026",
+  "I got 4x4 PB Average Officially! and also got 5x5 double PR"
+);
