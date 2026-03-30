@@ -383,3 +383,7 @@ COMP(
 COMP(
   "BoltonSpring2026"
 );
+COMP(
+  "GlasgowBigandFMCSpring2026",
+  "6x6 PR Mean both rounds :3, 7x7 PR Single in final :3"
+);
