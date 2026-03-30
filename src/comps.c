@@ -380,3 +380,6 @@ COMP(
   "CreweSpring2026",
   "Sub-55 5x5 Single in comp :3"
 );
+COMP(
+  "BoltonSpring2026"
+);
