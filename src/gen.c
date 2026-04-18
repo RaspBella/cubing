@@ -83,13 +83,13 @@ struct {
 #define GET_COMP(_1, _2, ID, ...) ID
 #define COMP(...) GET_COMP(__VA_ARGS__, COMP2, COMP1)(__VA_ARGS__)
 
-void start_html(FILE *fp) {
+void start_html(const char *title, FILE *fp) {
   fprintf(
     fp,
     "<!DOCTYPE html>\n"
     "<html lang=\"en\">\n"
     "  <head>\n"
-    "    <title>cubing pbs - RaspBella</title>\n"
+    "    <title>%s</title>\n"
     "    <link rel=\"stylesheet\" href=\"/main.css\">\n"
     "    <meta charset=\"UTF-8\">\n"
     "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
@@ -108,7 +108,8 @@ void start_html(FILE *fp) {
     "      <li><a href=\"/trans\">transportation</a></li>\n"
     "      <li><a href=\"/blog\">blog</a></li>\n"
     "      <li><a href=\"/calendar\">calendar</a></li>\n"
-    "    </ul>\n"
+    "    </ul>\n",
+    title
   );
 }
 
@@ -147,7 +148,7 @@ void other_event2html(FILE *fp, const char *event, const char *single, const cha
 }
 
 void pbs2html(FILE *fp) {
-  start_html(fp);
+  start_html("cubing pbs - RaspBella", fp);
 
   fprintf(
     fp,
@@ -262,7 +263,7 @@ void comp2html(FILE *fp, size_t n, comp comp) {
 }
 
 void comps2html(FILE *fp) {
-  start_html(fp);
+  start_html("cubing comps - RaspBella", fp);
 
   fprintf(
     fp,
