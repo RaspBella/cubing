@@ -390,3 +390,6 @@ COMP(
 COMP(
   "LeedsSpring2026"
 );
+COMP(
+  "LiverpoolSpring2026"
+)
