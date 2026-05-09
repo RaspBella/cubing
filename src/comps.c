@@ -396,3 +396,7 @@ COMP(
 COMP(
   "ManchesterCLFirst2026"
 );
+COMP(
+  "ManchesterMegaminxDay2026",
+  "I got 6x6 PR Single by more than 6 seconds, and PR Mean :3"
+);
