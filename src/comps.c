@@ -400,3 +400,7 @@ COMP(
   "ManchesterMegaminxDay2026",
   "I got 6x6 PR Single by more than 6 seconds, and PR Mean :3"
 );
+COMP(
+  "WestonsuperMareSpring2026",
+  "sub-1 5x5 PR Average! and a 51 PR Single, also a 6x6 PR Mean, and One-Handed PR Single"
+);
