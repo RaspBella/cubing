@@ -404,3 +404,7 @@ COMP(
   "WestonsuperMareSpring2026",
   "sub-1 5x5 PR Average! and a 51 PR Single, also a 6x6 PR Mean, and One-Handed PR Single"
 );
+COMP(
+  "SheffieldSpring2026",
+  "I tied my ancient 2x2 PB Single and broke PR/SR/FNR"
+);
