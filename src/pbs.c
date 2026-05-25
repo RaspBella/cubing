@@ -24,7 +24,7 @@ PB(e_SQ1, average, "13.67");
 PB(e_Pyra, single, "1.76");
 PB(e_Pyra, average, "3.90");
 PB(e_Skewb, single, "2.42");
-PB(e_Skewb, average, "4.77");
+PB(e_Skewb, average, "4.06");
 PB(e_Mega, single, "57.79");
 PB(e_Mega, average, "1:06.72");
 PB(e_Clock, single, "6.98");
