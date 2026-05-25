@@ -406,7 +406,7 @@ COMP(
 );
 COMP(
   "SheffieldSpring2026",
-  "I tied my ancient 2x2 PB Single and broke PR/SR/FNR"
+  "I tied my ancient 2x2 PB Single and got NR4"
 );
 COMP(
   "ManchesterCLFirst2026"
