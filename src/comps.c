@@ -408,3 +408,6 @@ COMP(
   "SheffieldSpring2026",
   "I tied my ancient 2x2 PB Single and broke PR/SR/FNR"
 );
+COMP(
+  "ManchesterCLFirst2026"
+);
