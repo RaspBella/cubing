@@ -414,3 +414,6 @@ COMP(
 COMP(
   "CreweMay2026"
 );
+COMP(
+  "EdinburghClockDay2026"
+);
