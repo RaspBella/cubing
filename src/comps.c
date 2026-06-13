@@ -409,7 +409,7 @@ COMP(
   "I tied my ancient 2x2 PB Single and got NR4"
 );
 COMP(
-  "ManchesterCLFirst2026"
+  "ManchesterCLSecond2026"
 );
 COMP(
   "CreweMay2026"
@@ -417,3 +417,7 @@ COMP(
 COMP(
   "EdinburghClockDay2026"
 );
+COMP(
+  "ManchesterCLThird2026",
+  "Smashed 7x7 PR's by 11 seconds for both Single and Mean :3"
+)
