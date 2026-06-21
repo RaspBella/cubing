@@ -421,3 +421,7 @@ COMP(
   "ManchesterCLThird2026",
   "Smashed 7x7 PR's by 11 seconds for both Single and Mean :3"
 )
+COMP(
+  "WakefieldSummer2026",
+  "2:51.30 7x7 PR Single, 1:59.94 6x6 PR Mean :333"
+);
