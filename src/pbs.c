@@ -29,5 +29,5 @@ PB(e_Mega, single, "57.79");
 PB(e_Mega, average, "1:06.72");
 PB(e_Clock, single, "6.98");
 PB(e_Clock, average, "8.97");
-PB(e_FMC, single, "23");
+PB(e_FMC, single, "18");
 PB(e_FMC, average, "28.00");
