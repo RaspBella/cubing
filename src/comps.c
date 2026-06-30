@@ -425,3 +425,7 @@ COMP(
   "WakefieldSummer2026",
   "2:51.30 7x7 PR Single, 1:59.94 6x6 PR Mean :333"
 );
+COMP(
+  "FarewellStrathclyde2026",
+  "18.32 OH Average PR tied, 59.50 5x5 PR Average, Insane FMC Double PB's: 18 (see: 4164e373daec2ead88ad5af7337e58c1934e6fce), 35 bweh, and 25 making a 26.00 Mean see commit: cccbaffd49091dfe94728ce82a2938e40559a49e"
+);
