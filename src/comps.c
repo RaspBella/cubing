@@ -429,3 +429,7 @@ COMP(
   "FarewellStrathclyde2026",
   "18.32 OH Average PR tied, 59.50 5x5 PR Average, Insane FMC Double PB's: <a href=\"https://github.com/RaspBella/cubing/commit/4164e373daec2ead88ad5af7337e58c1934e6fce\">18</a>, 35 bweh, and 25 making a 26.00 Mean, <a href=\"https://github.com/RaspBella/cubing/commit/cccbaffd49091dfe94728ce82a2938e40559a49e\">FMC PB's</a>"
 );
+COMP(
+  "ManchesterCLFinal2026",
+  "5x5 double PR's in finals :333"
+);
