@@ -433,3 +433,7 @@ COMP(
   "ManchesterCLFinal2026",
   "5x5 double PR's in finals :333"
 );
+COMP(
+  "StevenageJuly2026",
+  "Got OH PR Average :3"
+);
