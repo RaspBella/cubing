@@ -1,7 +1,7 @@
 PB(e_2x2, single, "0.63");
 PB(e_2x2, average, "1.91");
 PB(e_3x3, single, "4.95");
-PB(e_3x3, average, "7.71");
+PB(e_3x3, average, "7.50");
 PB(e_4x4, single, "28.06");
 PB(e_4x4, average, "34.86");
 PB(e_5x5, single, "48.93");
