@@ -437,3 +437,7 @@ COMP(
   "StevenageJuly2026",
   "Got OH PR Average :3"
 );
+COMP(
+  "Euro2026",
+  "Got 6x6 PR Single and Mean :3"
+);
