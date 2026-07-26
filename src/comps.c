@@ -441,3 +441,7 @@ COMP(
   "Euro2026",
   "Got 6x6 PR Single and Mean :3"
 );
+COMP(
+  "NewcastleuponTyneSummer2026",
+  "7x7 podium (3rd) :3"
+);
