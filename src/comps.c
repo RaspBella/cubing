@@ -445,3 +445,7 @@ COMP(
   "NewcastleuponTyneSummer2026",
   "7x7 podium (3rd) :3"
 );
+COMP(
+  "SouthWalesSummer2026",
+  "First comp in Wales :3!"
+);
