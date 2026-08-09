@@ -449,3 +449,7 @@ COMP(
   "SouthWalesSummer2026",
   "First comp in Wales :3!"
 );
+COMP(
+  "BristolAugust2026",
+  "6x6 Double PR in First round, +2ing out of PB Single, 8.42 3x3 PR Average in Finals"
+);
