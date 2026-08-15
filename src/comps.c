@@ -453,3 +453,7 @@ COMP(
   "BristolAugust2026",
   "6x6 Double PR in First round, +2ing out of PB Single, 8.42 3x3 PR Average in Finals"
 );
+COMP(
+  "KewbzUKBLDChampionship2026",
+  "Got Multi and 5BLD PB's :3, 5/5 in 31:17, and 22:55... also ukc podium for 5BLD what"
+);
