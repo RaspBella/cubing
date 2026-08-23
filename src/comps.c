@@ -460,3 +460,7 @@ COMP(
 COMP(
   "KewbzUKChampionshipFMC2026"
 );
+COMP(
+  "YorkSummer2026",
+  "Got OH PR Average :3"
+);
