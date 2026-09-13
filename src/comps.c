@@ -468,3 +468,7 @@ COMP(
   "KewbzUKChampionship2026",
   "6x6 PR Mean :3"
 );
+COMP(
+  "SouthportAutumn2026",
+  "Tied 2x2 PR Average, first official sub-10 SQ1 PR Single"
+);
