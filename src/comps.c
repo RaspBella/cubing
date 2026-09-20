@@ -475,3 +475,6 @@ COMP(
 COMP(
   "ManchesterSeptember2026"
 );
+COMP(
+  "BramptonAutumn2026"
+);
