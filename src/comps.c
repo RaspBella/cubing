@@ -478,3 +478,6 @@ COMP(
 COMP(
   "BramptonAutumn2026"
 );
+COMP(
+  "WestonsuperMareAutumn2026"
+);
