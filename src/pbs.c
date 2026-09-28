@@ -5,7 +5,7 @@ PB(e_3x3, average, "7.50");
 PB(e_4x4, single, "28.06");
 PB(e_4x4, average, "34.86");
 PB(e_5x5, single, "48.93");
-PB(e_5x5, average, "57.33");
+PB(e_5x5, average, "56.19");
 PB(e_6x6, single, "1:43.64");
 PB(e_6x6, average, "1:52.11");
 PB(e_7x7, single, "2:41.02");
