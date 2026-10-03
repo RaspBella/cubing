@@ -481,3 +481,7 @@ COMP(
 COMP(
   "WestonsuperMareAutumn2026"
 );
+COMP(
+  "PooleAutumn2026",
+  "4X4 PR Single: 30.14"
+);
