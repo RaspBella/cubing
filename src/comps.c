@@ -485,3 +485,6 @@ COMP(
   "PooleAutumn2026",
   "4X4 PR Single: 30.14"
 );
+COMP(
+  "CreweOctober2026"
+);
