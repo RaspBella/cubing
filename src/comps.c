@@ -488,3 +488,6 @@ COMP(
 COMP(
   "CreweOctober2026"
 );
+COMP(
+  "FalkirkAutumn2026"
+);
