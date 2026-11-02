@@ -5,7 +5,7 @@
 #define WCA "worldcubeassociation.org"
 #define COMP_BASE_URL "https://" WCA "/competitions/"
 
-#define OUTPUT_DIR "../docs"
+#define OUTPUT_DIR "docs"
 
 enum {
   e_2x2,
