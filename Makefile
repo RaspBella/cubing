@@ -1,4 +1,4 @@
-output_dir=../docs
+output_dir=docs
 files=pbs comps
 dirs=$(addprefix $(output_dir)/,$(files))
 
@@ -10,7 +10,7 @@ all: gen
 	mkdir -p $(dirs)
 	./gen
 
-gen: gen.c
+gen: src/gen.c
 	cc $(CFLAGS) $< -o $@
 
 -include gen.d
