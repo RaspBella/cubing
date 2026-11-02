@@ -1,4 +1,4 @@
 docs/pbs*
 docs/comps*
-src/gen*
+gen*
 !src/gen.c
