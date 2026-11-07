@@ -495,3 +495,7 @@ COMP(
   "PlymouthAutumn2026",
   "Furthest SouthWest Comp in the UK: Clock PR Single :3 and 5x5 2nd and 2x2 3rd"
 );
+COMP(
+  "CardiffNovember2026",
+  "5.51 3x3 PR Single :3"
+);
