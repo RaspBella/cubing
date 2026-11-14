@@ -499,3 +499,6 @@ COMP(
   "CardiffNovember2026",
   "5.51 3x3 PR Single :3"
 );
+COMP(
+  "EdinburghMegaminxDay2026"
+);
